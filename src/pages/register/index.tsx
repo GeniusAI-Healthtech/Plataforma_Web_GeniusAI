@@ -1,4 +1,4 @@
-import { useNavigate, Link as RouterLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { validateLogin } from '../../auth/users'
 import logo from '../../assets/logo.png'
 import { useState, ChangeEvent, FormEvent, useEffect } from 'react'
@@ -29,7 +29,7 @@ const theme = createTheme({
   },
 })
 
-export default function Login() {
+export default function Register() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isAuth, setIsAuth] = useState(false)
@@ -130,7 +130,7 @@ export default function Login() {
                 <GoogleIcon />
               </Box>
               <Typography variant="h6" sx={{ paddingRight: '2rem' }}>
-                Entrar com o Google
+                aaaaaaaaaaa
               </Typography>
             </Box>
             <Box
@@ -222,7 +222,7 @@ export default function Login() {
               Entrar
             </Button>
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-              <Link component={RouterLink} to="/Register" variant="body2">
+              <Link href="#" variant="body2">
                 {'Não tem uma conta? Inscrever-se'}
               </Link>
             </Box>
